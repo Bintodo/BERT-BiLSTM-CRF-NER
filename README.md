@@ -44,7 +44,7 @@ You can use -help to view the relevant parameters of the training named entity r
 ```angular2html
 bert-base-ner-train -help
 ```
-![](./pictures/ner_help.png)  
+![](images/ner_help.png)  
   
 
 train/dev/test dataset is like this:
@@ -104,7 +104,7 @@ which model_dir, bert_model_dir is need
 ```
 bert-base-serving-start -help
 ```
-![](./pictures/server_help.png)
+![](images/server_help.png)
 
 and than you can using below cmd start ner service:
 ```angular2html
@@ -134,8 +134,8 @@ model_pb_dir: model freeze save dir, after run optimize func, there will contain
 Set ner_mode.pb/classification_model.pb to model_pb_dir, and set other file to model_dir(Different models need to be stored separately, you can set ner models label_list.pkl and label2id.pkl to model_dir/ner/ and set text classification file to model_dir/text_classification) , Text classification model can classify 12 categories of Chinese data： '游戏', '娱乐', '财经', '时政', '股票', '教育', '社会', '体育', '家居', '时尚', '房产', '彩票'  
 
 You can see below service starting info:
-![](./pictures/service_1.png)
-![](./pictures/service_2.png)
+![](images/service_1.png)
+![](images/service_2.png)
 
 
 you can using below code test client:  
@@ -152,7 +152,7 @@ with BertClient(show_server_config=False, check_version=False, check_length=Fals
     print(time.perf_counter() - start_t)
 ```
 you can see this after run the above code:
-![](./pictures/server_ner_rst.png)
+![](images/server_ner_rst.png)
 If you want to customize the word segmentation method, you only need to make the following simple changes on the client side code.
 
 ```angular2html
@@ -171,7 +171,7 @@ with BertClient(show_server_config=False, check_version=False, check_length=Fals
     print('time used:{}'.format(time.perf_counter() - start_t))
 ```
 you can see this after run the above code:
-![](./pictures/text_class_rst.png)
+![](images/text_class_rst.png)
 
 Note that it can not start NER service and Text Classification service together. but you can using twice command line start ner service and text classification with different port.  
 
@@ -246,15 +246,15 @@ BiLSTM with CRF output layer
 ## Result:
 all params using default
 #### In dev data set:
-![](./pictures/picture1.png)
+![](images/picture1.png)
 
 #### In test data set
-![](./pictures/picture2.png)
+![](images/picture2.png)
 
 #### entity leval result:
 last two result are label level result, the entitly level result in code of line 796-798,this result will be output in predict process.
 show my entity level result :
-![](./pictures/03E18A6A9C16082CF22A9E8837F7E35F.png)
+![](images/03E18A6A9C16082CF22A9E8837F7E35F.png)
 > my model can download from baidu cloud:  
 >链接：https://pan.baidu.com/s/1GfDFleCcTv5393ufBYdgqQ 提取码：4cus  
 NOTE: My model is trained by crf_only params
@@ -264,7 +264,7 @@ If model is train finished, just run
 ```angular2html
 python3 terminal_predict.py
 ```
-![](./pictures/predict.png)
+![](images/predict.png)
  
  ## Using NER as Service
 
@@ -282,8 +282,8 @@ python3 runs.py \
   
 You can download my ner model from：https://pan.baidu.com/s/1m9VcueQ5gF-TJc00sFD88w, ex_code: guqq  
 Set ner_mode.pb to model_pd_dir, and set other file to ner_model_dir and than run last cmd  
-![](./pictures/service_1.png)
-![](./pictures/service_2.png)
+![](images/service_1.png)
+![](images/service_2.png)
 
 
 #### Client
