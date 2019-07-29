@@ -1,11 +1,5 @@
 # -*- coding: utf-8 -*-
 
-"""
- 一些公共模型代码
- @Time    : 2019/1/30 12:46
- @Author  : MaCan (ma_cancan@163.com)
- @File    : models.py
-"""
 
 from train.lstm_crf_layer import BLSTM_CRF
 from tensorflow.contrib.layers.python.layers import initializers

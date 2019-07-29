@@ -1,12 +1,5 @@
 # -*- coding: utf-8 -*-
 
-"""
-
- @Time    : 2019/1/29 14:34
- @Author  : MaCan (ma_cancan@163.com)
- @File    : client.py
- some code come from <https://hanxiao.github.io>
-"""
 
 import sys
 import threading

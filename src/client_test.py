@@ -1,11 +1,5 @@
 # -*- coding: utf-8 -*-
 
-"""
-
- @Time    : 2019/1/29 14:32
- @Author  : MaCan (ma_cancan@163.com)
- @File    : client_test.py
-"""
 import time
 from client import BertClient
 

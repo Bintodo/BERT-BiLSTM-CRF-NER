@@ -1,13 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""
-#@Time    : 2019/1/28 10:51
-# @Author  : MaCan (ma_cancan@163.com)
-# @File    : server.py
-
-some code copy from <https://hanxiao.github.io>
-"""
 
 from __future__ import absolute_import
 from __future__ import division
@@ -522,8 +515,8 @@ class BertWorker(Process):
     def input_fn_builder(self, socks, tf):
         import sys
         sys.path.append('..')
-        from src import convert_lst_to_features
-        from src import FullTokenizer
+        from bert.extract_features import convert_lst_to_features
+        from bert.tokenization import FullTokenizer
         
         def gen():
             tokenizer = FullTokenizer(vocab_file=os.path.join(self.args.bert_model_dir, 'vocab.txt'))

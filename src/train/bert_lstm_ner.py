@@ -4,8 +4,6 @@
 Copyright 2018 The Google AI Language Team Authors.
 BASED ON Google_BERT.
 reference from :zhoukaiyin/
-
-@Author:Macan
 """
 
 from __future__ import absolute_import

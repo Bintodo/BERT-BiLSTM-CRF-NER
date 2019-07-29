@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 # libinfo_py = 'bert_lstm_ner.py'
 # libinfo_content = open(libinfo_py, 'r', encoding='utf-8').readlines()
 # version_line = [l.strip() for l in libinfo_content if l.startswith('__version__')][0]
-# # exec(version_line)  # produce __version__
+# exec(version_line)  # produce __version__
 # __version__ = version_line.split('=')[1].replace(' ', '')
 # print(__version__)
 setup(
@@ -18,8 +18,8 @@ setup(
     url='https://github.com/macanv/BERT-BiLSTM-CRF-NER',
     long_description=open('README.md', 'r', encoding='utf-8').read(),
     long_description_content_type='text/markdown',
-    author='Ma Can',
-    author_email='ma_cancan@163.com',
+    author='',
+    author_email='',
     license='MIT',
     packages=find_packages(),
     zip_safe=False,
@@ -39,7 +39,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
-        #'Topic :: Scientific/Engineering :: Artificial Intelligence :: Natural Language Processing :: Named Entity Recognition',
+        # 'Topic :: Scientific/Engineering :: Artificial Intelligence :: Natural Language Processing :: Named Entity Recognition',
     ),
     entry_points={
         'console_scripts': ['bert-base-serving-start=bert_base.runs:start_server',
